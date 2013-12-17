@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+@import "bourbon";
+@import "bitters/bitters";
+@import "neat";
+@import "partials/functions";
+
+body {
+  background: #d4d4d4 url("../images/background.png");
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.module-test {
+  padding: my-calculation-function(6em, 5em);
+}
+
+
+.color-box {
+  width: 80%;
+  min-height: 200px;
+  margin: 0 auto;
+  padding: my-calculation-function(2em, $base-line-height);
+  border: 3px solid $base-border-color;
+
+}
+

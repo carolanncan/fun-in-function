@@ -1,0 +1,11 @@
+@function my-calculation-function($some-number, $another-number){
+    @return $some-number + $another-number
+  }
+
+  $authors: nick aimee dan drew;
+
+  @each $author in $authors {
+    .author-#{$author} {
+      background: url(images/author-#{$author}.jpg);
+    }
+  }
