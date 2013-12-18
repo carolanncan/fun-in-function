@@ -17,8 +17,9 @@ $authors: nick aimee dan drew;
 
   .author-name-#{$author} {
     &:after {
-      content: '#{$author}.';
+      content: '#{$author}';
       text-transform: capitalize;
+      color: $base-accent-color;
     }
    }
 }
