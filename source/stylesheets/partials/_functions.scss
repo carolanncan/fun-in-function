@@ -1,11 +1,25 @@
 @function my-calculation-function($some-number, $another-number){
-    @return $some-number + $another-number
+  @return $some-number + $another-number
+}
+
+
+$authors: nick aimee dan drew;
+
+@each $author in $authors {
+  .author-#{$author} {
+    background: url('../images/author-#{$author}.jpg');
+    background-size: 200px, 200px;
+    background-repeat: no-repeat;
   }
+}
 
-  $authors: nick aimee dan drew;
+@each $author in $authors {
 
-  @each $author in $authors {
-    .author-#{$author} {
-      background: url(images/author-#{$author}.jpg);
+  .author-name-#{$author} {
+    &:after {
+      content: '#{$author}.';
+      text-transform: capitalize;
     }
-  }
+   }
+}
+

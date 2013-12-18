@@ -1,27 +1,39 @@
 @charset "utf-8";
 
+@import url(http://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic);
 @import "bourbon";
 @import "bitters/bitters";
 @import "neat";
+@import "neat/neat-helpers";
+
 @import "partials/functions";
 
+
+section {
+  @include outer-container;
+}
+
 body {
-  background: #d4d4d4 url("../images/background.png");
-  text-align: center;
-  font-family: sans-serif;
+  background: $light-gray;
 }
 
 .module-test {
+  @include span-columns(8);
+  @include shift(2);
   padding: my-calculation-function(6em, 5em);
+  position: relative;
 }
 
+.text-wrap {
+  @include span-columns(6);
+}
 
-.color-box {
-  width: 80%;
-  min-height: 200px;
-  margin: 0 auto;
-  padding: my-calculation-function(2em, $base-line-height);
-  border: 3px solid $base-border-color;
-
+aside.picture {
+  @include span-columns(2);
+  clear: both;
+  height: 200px;
+  width: 200px;
+  margin: 0 $base-line-height 2em;
+  border: 2px solid darken($base-border-color, 20);
 }
 
