@@ -24,3 +24,14 @@ $authors: nick aimee dan drew;
    }
 }
 
+$violet: #fff;
+$teal: teal;
+$silver: silver;
+
+$color-variables: $violet, $teal, $silver;
+
+@each $color in $color-variables {
+  .bg-#{$color} {
+    background: $color;
+  }
+}

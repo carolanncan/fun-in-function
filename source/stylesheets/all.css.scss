@@ -6,7 +6,6 @@
 @import "neat";
 @import "neat/neat-helpers";
 
-@import "partials/functions";
 
 section {
   @include outer-container;
@@ -40,3 +39,4 @@ aside.picture {
   border: 2px solid darken($base-border-color, 20);
 }
 
+@import "partials/functions";
