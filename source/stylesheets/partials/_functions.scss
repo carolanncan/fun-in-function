@@ -24,14 +24,26 @@ $authors: nick aimee dan drew;
    }
 }
 
-$violet: #fff;
-$teal: teal;
-$silver: silver;
+// $violet: #fff;
+// $teal: teal;
+// $silver: silver;
 
-$color-variables: $violet, $teal, $silver;
+// $color-variables: $violet, $teal, $silver;
+// 
+// @each $color in $color-variables {
+//   .bg-#{$color} {
+//     background: $color;
+//   }
+// }
 
-@each $color in $color-variables {
-  .bg-#{$color} {
-    background: $color;
-  }
-}
+// $colors: (
+//   violet: #fff,
+//   teal: teal,
+//   silver: silver,
+// )
+
+$colors: (
+  header: #b06,
+  text: #334,
+  footer: #666777,
+)
